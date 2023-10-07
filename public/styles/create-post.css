@@ -1,0 +1,45 @@
+form label{
+    display: block;
+    color: rgb(41,7,150);
+    font-weight: bold;
+    
+}
+
+form{
+    width: 30rem;
+   margin:0 auto ;
+    margin-top: 5rem;
+    font-size: 1.25rem;
+}
+
+form input{
+    font-size: 1.25rem;
+    width: 100%;
+    border-radius: 0.25rem;
+    box-shadow: 1px 1px 1px rgba(47,48,48,0.3);
+    color: rgb(68,69,69);
+}
+
+form textarea{
+    font-size: 1.25rem;
+    color:rgb(67,68,69) ;
+    white-space: pre-wrap;
+    width: 100%;
+    white-space: pre-wrap;
+}
+
+form button{
+    display: block;
+    padding: .5rem;
+    margin: 1rem auto 0 auto;
+    font: inherit;
+    background-color: rgb(41,7,150);
+    color:rgb(250,255,255) ;
+    border: none;
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+form button:hover{
+    background-color: rgb(50,17,160);
+}

@@ -1,0 +1,15 @@
+<%- include('../shared/includes/head' ,{pageTitle: "All Posts"} )%>
+<link rel="stylesheet" href="/styles/post-item.css">
+</head>
+<body>
+    <%-include('../shared/includes/header')%>
+    <section>
+        <h2>Title</h2>
+        <h2> <%= post.title %></h2>
+        <hr>
+        <h2>Summary</h2>
+        <h3> <%= post.summary %></h3>
+        <h2>Body</h2>
+        <p><%= post.body %></p>
+    </section>
+<%- include('../shared/includes/footer')%>

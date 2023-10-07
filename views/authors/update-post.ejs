@@ -1,0 +1,25 @@
+<%- include('../shared/includes/head' ,{pageTitle: "Add New Posts"} )%>
+<link rel="stylesheet" href="/styles/create-post.css">
+<link rel="stylesheet" href="/styles/post-item.css">
+</head>
+<body>
+    <%-include('../shared/includes/header')%>
+    <form action="/post/<%= post._id%>/edit" method="POST">
+        <label for="updatedTitle">
+            Title : 
+        </label>
+        <input type="text" name="title" id="updatedTitle" value="<%= post.title%>" required>
+        <label for="updatedSummary">
+            Summary : 
+        </label>
+        <input type="text" name="summary" id="updatedSummary" value="<%= post.summary%>" required>
+        <label for="updatedBody">
+            Description : 
+        </label>
+        <textarea name="body" id="updatedBody" cols="30" rows="10"  required>
+            <%= post.body%>
+        </textarea>
+        <button>Update Post</button>
+    </form>
+
+<%- include('../shared/includes/footer')%>

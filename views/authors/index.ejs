@@ -1,0 +1,9 @@
+<%- include('../shared/includes/head' ,{pageTitle: "All Posts"} )%>
+<link rel="stylesheet" href="/styles/post-item.css">
+</head>
+<body>
+    <%-include('../shared/includes/header')%>
+    <% for(const post of posts){%>
+        <%-include('../shared/post-item' , {post:post})%>
+        <% }%>
+<%- include('../shared/includes/footer')%>
